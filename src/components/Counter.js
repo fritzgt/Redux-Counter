@@ -6,6 +6,12 @@ class Counter extends Component {
   incrementIfOdd = () => {
     // Stretch Problem: Implement an increment function that
     // only increments if the counter value is odd
+    const isItOdd = this.props.count % 2;
+    if (isItOdd === 1) {
+      this.props.increment();
+    } else {
+      return;
+    }
   };
 
   incrementAsync = () => {

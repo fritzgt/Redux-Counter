@@ -11,8 +11,18 @@ export const DECREMENT = 'DECREMENT';
 
 export const increment = () => {
   // Fill in this function
+  //passing the type to the switch in the reducer
+  //to know how to update state
+  return {
+    type: INCREMENT
+  }
 };
 
 export const decrement = () => {
   // Fill in this function
+  //passing the type to the switch in the reducer
+  //to know how to update state
+  return {
+    type: DECREMENT
+  }
 };
